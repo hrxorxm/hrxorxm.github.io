@@ -4,6 +4,7 @@ title:  "[통계적 기계학습] 8. CNN architectures"
 subtitle:   "ImageNet Challenge 를 통해 발전한 여러 CNN 구조들에 대해 알아보자"
 categories: "DeepLearning"
 tags: [CNN]
+use_math: true
 ---
 
 # CNN architectures
