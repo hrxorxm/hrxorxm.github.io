@@ -165,7 +165,10 @@ lang: "ko"  # default lang is en
 # highlighter: none
 markdown: kramdown
 kmarkdown:
-  input: GFM
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 plugins:
   - jekyll-feed
