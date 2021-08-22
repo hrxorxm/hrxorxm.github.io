@@ -2,7 +2,7 @@
 layout: post
 title:  "[통계적 기계학습] 3. Linear Classifiers"
 subtitle:   "선형 분류기의 수학적 정의와 종류를 알아보자 (Self-check 有)"
-categories: "DeepLearning"
+categories: "Statistical-Machine-Learning"
 tags: [LinearClassifier]
 use_math: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "[통계적 기계학습] 2-2. k-Nearest Neighbors"
 subtitle:   "k-최근접 이웃 알고리즘과 이미지 분류 학습 방법에 대해 알아보자"
-categories: "DeepLearning"
+categories: "Statistical-Machine-Learning"
 tags: [kNN]
 use_math: true
 ---

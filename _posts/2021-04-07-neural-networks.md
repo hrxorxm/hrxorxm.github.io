@@ -2,7 +2,7 @@
 layout: post
 title:  "[통계적 기계학습] 5. Neural Networks"
 subtitle:   "신경망과 비선형 변환의 수학적 정의와 성질에 대해 알아보자 (Self-check 有)"
-categories: "DeepLearning"
+categories: "Statistical-Machine-Learning"
 tags: [NeuralNetwork]
 use_math: true
 ---

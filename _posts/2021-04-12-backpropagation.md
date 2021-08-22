@@ -2,7 +2,7 @@
 layout: post
 title:  "[통계적 기계학습] 6. Backpropagation"
 subtitle:   "역전파 계산과 구현 방법에 대해 알아보자 (Self-check 有)"
-categories: "DeepLearning"
+categories: "Statistical-Machine-Learning"
 tags: [Backpropagation]
 use_math: true
 ---
