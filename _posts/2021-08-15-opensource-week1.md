@@ -2,7 +2,7 @@
 layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 1. 튜토리얼 사이트 빌드 및 오픈소스 교육"
 subtitle:   "오픈소스 컨트리뷰션 아카데미 1주차"
-categories: "Contribution"
+categories: "OpenSource-Contribution"
 tags: [OpenSource, Contribution, Academy]
 use_math: true
 ---

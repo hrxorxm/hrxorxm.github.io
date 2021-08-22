@@ -2,7 +2,7 @@
 layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 2. 허브 사이트 빌드 및 번역 연습"
 subtitle:   "오픈소스 컨트리뷰션 아카데미 2주차"
-categories: "Contribution"
+categories: "OpenSource-Contribution"
 tags: [OpenSource, Contribution, Academy]
 use_math: true
 ---
@@ -33,7 +33,8 @@ $ git submodule update --init --recursive
 - 패키지 설치하기
   - nvm : https://www.vultr.com/docs/install-nvm-and-node-js-on-ubuntu-20-04
   - rbenv, ruby-build : https://linoxide.com/how-to-install-ruby-on-rails-on-ubuntu-20-04/
-```
+
+```bash
 $ nvm use 9.8
 $ node -v
 v9.8.0
@@ -45,15 +46,20 @@ $ gem install bundler -v 2.2.17
 $ bundle install
 $ make serve
 ```
+
 * 혹시나 yarn으로 이상으로 안된다면 추가
-```
+
+```bash
 $ npm install -g yarn
 $ make serve
 ```
+
 * 로컬 빌드후에는 _site디렉토리에 결과를 보실수 있습니다
-```
+
+```bash
 $ make build
 ```
+
 * 혹은 `make serve` 후에 127.0.0.1:4000 에서 확인하기
 
 ## 2. 정기 미팅 (8/15) 20:00~
@@ -95,4 +101,23 @@ $ make build
 - 용어집 및 기존 사례와 잘 어울리는지 확인하기
 
 ## 5. 정기 미팅 (8/22) 20:00~
+
+* 이번 주 회고
+  * 과제 의도 : 기존 번역된 문서와 비교하며 톤앤매너를 맞추는 것이 중요
+  * 개선할 점
+    * 주어는 번역을 잘 하지 않는다.
+    * 처음 등장하는, 애매한 단어는 원문을 함께 쓰기도 한다.
+    * class 이름과 일반 명사는 가급적 다르게 번역
+    * 어디까지 자세하게 번역해야할지는 아직 토론 필요
+* 다음 주부터 과제 두 개
+  * 파이토치 튜토리얼에서 오타 잘못된 부분 찾아서 pr 실제로 찾아주기 (방법은 알아서, 최소 한 개 이상)
+  * 용어집에서 오타 찾거나 추가하기 (merge 될만한 것들을 주로 올려주면 좋을 것 같다)
+  * 개인주도적으로 활동하고, 토론하는 일이 많을 것
+* 다음 달부터 마스터즈 프로그램
+  * 목표 : 최소한의 적절한 가이드 + 오픈소스에 대한 열정
+    * 좋은 기억을 가지고 갈 수 있는 컨트리뷰톤
+    * 채워야 했던 숫자보다는 뿌듯한 기억 한 조각, 잘 번역한 문서가 기억나면 좋을 것 같다.
+  * 실천하기
+    * 조금만 더 의견 내고 참여하자
+    * 모임 공간 등 이용해도 좋다
 
