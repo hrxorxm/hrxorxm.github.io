@@ -161,6 +161,10 @@ lang: "ko"  # default lang is en
 #   client_secret: "Your client secret"
 #   redirect_uri: "Your redirect url"   # If you use a custom domain name
 
+# Utterances comments
+utterances:
+  enable: true
+
 # Build settings
 # highlighter: none
 markdown: kramdown
