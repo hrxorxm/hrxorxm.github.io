@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 7. 기여 방법 문서화 진행상황 공유"
-subtitle:   "오픈소스 컨트리뷰션 아카데미 5주차"
+subtitle:   "오픈소스 컨트리뷰션 아카데미 7주차"
 categories: "OpenSource-Contribution"
 tags: [OpenSource, Contribution, Academy]
 use_math: true

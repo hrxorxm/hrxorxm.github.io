@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 6. 허브 번역 PR 및 추석 연휴"
-subtitle:   "오픈소스 컨트리뷰션 아카데미 5주차"
+subtitle:   "오픈소스 컨트리뷰션 아카데미 6주차"
 categories: "OpenSource-Contribution"
 tags: [OpenSource, Contribution, Academy]
 use_math: true
