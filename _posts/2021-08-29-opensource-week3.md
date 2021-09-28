@@ -3,7 +3,7 @@ layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 3. 번역 개선 및 용어집 추가"
 subtitle:   "오픈소스 컨트리뷰션 아카데미 3주차"
 categories: "OpenSource-Contribution"
-tags: [OpenSource, Contribution, Academy]
+tags: []
 use_math: true
 ---
 

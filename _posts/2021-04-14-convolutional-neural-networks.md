@@ -3,7 +3,7 @@ layout: post
 title:  "[통계적 기계학습] 7. Convolutional Neural Networks"
 subtitle:   "합성곱 신경망과 내부 구성 요소에 대해 알아보자 (Self-check 有)"
 categories: "Statistical-Machine-Learning"
-tags: [CNN]
+tags: []
 use_math: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "[통계적 기계학습] 4. Optimization"
 subtitle:   "최적화 알고리즘의 종류를 알아보자 (Self-check 有)"
 categories: "Statistical-Machine-Learning"
-tags: [Optimization]
+tags: []
 use_math: true
 ---
 

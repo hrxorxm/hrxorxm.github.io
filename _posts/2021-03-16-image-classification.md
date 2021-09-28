@@ -3,7 +3,7 @@ layout: post
 title: "[통계적 기계학습] 2-1. Image classification"
 subtitle: "이미지 분류 문제에 대한 정의와 잘 알려진 데이터셋에 대해 알아보자"
 categories: "Statistical-Machine-Learning"
-tags: [ImageClassification, Dataset]
+tags: []
 use_math: true
 ---
 

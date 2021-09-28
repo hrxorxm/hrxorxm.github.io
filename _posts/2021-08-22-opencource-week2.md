@@ -3,7 +3,7 @@ layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 2. 허브 사이트 빌드 및 번역 연습"
 subtitle:   "오픈소스 컨트리뷰션 아카데미 2주차"
 categories: "OpenSource-Contribution"
-tags: [OpenSource, Contribution, Academy]
+tags: []
 use_math: true
 ---
 

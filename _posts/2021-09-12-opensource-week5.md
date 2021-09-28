@@ -3,7 +3,7 @@ layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 5. 중간 공유회 및 허브 번역 시작"
 subtitle:   "오픈소스 컨트리뷰션 아카데미 5주차"
 categories: "OpenSource-Contribution"
-tags: [OpenSource, Contribution, Academy]
+tags: []
 use_math: true
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "[파이토치 튜토리얼/허브 번역] 4. 중간 보고서 제출 및 PR 보내는 방법 논의"
 subtitle:   "오픈소스 컨트리뷰션 아카데미 4주차"
 categories: "OpenSource-Contribution"
-tags: [OpenSource, Contribution, Academy]
+tags: []
 use_math: true
 ---
 
