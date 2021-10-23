@@ -1,28 +1,84 @@
 ---
 layout: post
-title:  "[Boostcamp AI Tech] 29일차 학습정리"
-subtitle:   "Naver Boostcamp AI Tech Level1 Day29"
+title:  "[Boostcamp AI Tech][Special] Data Viz"
+subtitle:   "Naver Boostcamp AI Tech Special Lecture"
 categories: "Boostcamp-AI-Tech"
-tags: [6주차, Level2-U-Stage]
+tags: [Special-Lectures]
 use_math: true
 ---
 
-# 부스트캠프 29일차
+# 부스트캠프 데이터 시각화 강의
 
-## 📝 오늘 일정 정리
+## [1강] Introduction to Visualization (OT)
 
-* 9/10(금)
-  - [x] Data Viz
-    - [x] (5강) 다양한 시각화 방법론
-    - [x] (6강) 인터랙티브 시각화
-    - [x] (7강) 주제별 시각화와 사용법
-  - [x] NLP 이론 강의
-    - [x] [선택 과제 1] BERT Fine-tuning
-  - [x] 오피스아워 9/10 (금) 18:00~19:30 과제 해설 (김태희 멘토님)
+* 시각화
+  * 구성요소 : 목적, 독자, 데이터, 스토리, 방법, 디자인
+  * 목표 : 모범 사례를 통해 좋은 시각화를 만들어보자
+* `데이터` 시각화
+  * 데이터셋 종류 : 정형, 시계열, 지리, 관계형, 계층적, 비정형 데이터
+  * 수치형(numerical) : 연속형(continuous) / 이산형(discrete)
+  * 범주형(categorical) : 명목형(nominal) / 순서형(ordinal)
+* 시각화의 요소
+  * 마크(mark) : 점, 선, 면
+  * 채널(channel) : 마크를 변경할 수 있는 요소들
+    * 위치, 색, 모양, 크기, 부피, 각도 등
+    * 전주의적 속성(Pre-attentive Attribute)
+      * 주의를 주지 않아도 인지하게 되는 요소
+      * 적절하게 사용할 때, 시각적 분리(visual pop-out)
+* `Matplotlib` : `numpy`와 `scipy`를 베이스로 하여, 다양한 라이브러리와 호환성이 좋다.
 
-## 📚 강의 내용 정리
+## [2강] 기본 차트의 사용
 
-### [시각화 5강] 다양한 시각화 방법론
+* Bar plot : 막대 그래프, 범주에 따른 수치값 비교에 적절
+  * Principle of Proportion ink : 실제 값과 그래픽으로 표현되는 잉크 양은 비례해야 함
+* Line plot : 꺾은선 그래프, 시간/순서에 대한 추세(시계열 데이터)에 적합
+  * 보간 : 점과 점 사이에 데이터가 없을 때 잇는 방법
+* Scatter plot : 산점도 그래프, 두 feature간의 상관 관계 파악에 용이
+  * 인과 관계(causal relation)과 상관 관계(correlation)은 다르다.
+
+## [3강] 차트의 요소
+
+* Text 사용하기
+  * 시각적으로만 표현이 불가능한 내용 설명
+* Color 사용하기
+  * 효과적인 구분, 색조합 중요, 인사이트 전달 중요
+  * 범주형 : 독립된 색상 / 연속형 : 단일 색조의 연속적인 색상 / 발산형 : 상반된 색
+  * 색각 이상(색맹, 색약) 고려가 필요할 수 있다.
+* Facet(분할) 사용하기
+  * Multiple View : 다양한 관점 전달
+  * subplot, grid spec 등 이용
+
+## [4강] 통계와 차트
+
+* Seaborn : Matplotlib 기반의 통계 시각화 라이브러리, 쉬운 문법과 깔끔한 디자인
+* Seaborn 기초 : 기본 차트 그리기
+  * Categorical API : 범주형 데이터에 대한 시각화
+    * 대표적 : `counterplot` / `boxplot` / `violinplot`
+    * ETC : `boxenplot` / `swarmplot` / `stripplot`
+  * Distribution API : 분포에 대한 시각화
+    * Univariate Distribution : 단일 변수에 대한 분포
+      * `histplot` : 히스토그램
+      * `kdeplot` : Kernel Density Estimate
+      * `ecdfplot` : 누적 밀도 함수
+      * `rugplot` : 선을 사용한 밀도함수
+    * Bivariate Distribution : 두 변수에 대한 결합 확률 분포(joint probability distribution)
+      * `histplot`과 `kdeplot` 사용 시 축 두개 입력
+  * Relational API : 관계에 대한 시각화
+    * `scatterplot` / `lineplot`
+  * Regression API : 회귀에 대한 시각화
+    * `regplot`
+  * Matrix API : Matrix 데이터에 대한 시각화
+    * `heatmap(data.corr())` : 주로 상관관계(correlation) 시각화에 많이 사용
+* Seaborn 심화 : 여러 차트 그리기
+  * `jointplot` : 두 변수의 결합확률 분포와 함께 각각의 분포도 살필 수 있는 시각화를 제공
+  * `pairplot` : 데이터셋의 pair-wise 관계를 시각화하는 함수, 서브플롯 100개 이하로 그리는 것 추천
+  * FaceGrid : pairplot으로 feature-feature 사이를 살폈다면, Facet Grid는 feature-feature 뿐만이 아니라 feature's category-feature's category의 관계도 살펴볼 수 있다.
+    * `catplot` : Categorical
+    * `displot` : Distribution
+    * `relplot` : Relational
+    * `lmplot` : Regression
+
+## [5강] 다양한 시각화 방법론
 
 * Polar Coordinate (극 좌표계)
   * 구현 : [Matplotlib Projection](https://matplotlib.org/stable/api/projections_api.html)
@@ -64,7 +120,7 @@ use_math: true
     * Venn : 집합(set) 등에서 사용하는 익숙한 벤 다이어그램
     * EDA 보다는 출판 및 프레젠테이션에 사용
 
-### [시각화 6강] 인터랙티브 시각화
+## [6강] 인터랙티브 시각화
 
 - Interactive를 사용하는 이유 : 정적 시각화는 원하는 메세지를 압축해서 담는다는 장점이 있지만, 공간적 낭비가 크다.
   - jupyter notebook : 함수형으로 1번에 1개를 만드는 방식
@@ -85,7 +141,7 @@ use_math: true
     - Vega 라이브리를 사용하여 만들었고, 문법이 Pythonic하지 않다.
     - 기본 차트(Bar, Line, Scatter, Histogram)에 특화
 
-### [시각화 7강] 주제별 시각화와 사용법
+## [7강] 주제별 시각화와 사용법
 
 * 비정형 데이터 시각화 방법
   * Dataset Meta Data Visualization
@@ -108,7 +164,7 @@ use_math: true
     * [COCO dataset explorer](https://github.com/i008/COCO-dataset-explorer)
   * Dimension Reduction + Scatter Plot : t-SNE, UMAP 이용
 
-* 💙**Text Dataset Visualization**💙
+* **Text Dataset Visualization**
   * [Console output에 Highlight](https://stackoverflow.com/questions/287871/how-to-print-colored-text-to-the-terminal) : [Termcolor](https://github.com/ikalnytskyi/termcolor) \| [Sty](https://github.com/feluxe/sty) \| [Blessings](https://github.com/erikrose/blessings) \| [Rich](https://github.com/willmcgugan/rich)
   * HTML에 Highlight : `IPython의 HTML` \| [LIT](https://github.com/PAIR-code/lit) \| [Ecco](https://www.eccox.io/) \| [BertViz](https://github.com/jessevig/bertviz) \| [Texthero](https://github.com/jbesomi/texthero) \| [pyLDAvis](https://github.com/bmabey/pyLDAvis) \| [Scattertext](https://github.com/JasonKessler/scattertext) \| [Shifterator](https://github.com/ryanjgallagher/shifterator)
 
@@ -121,54 +177,3 @@ use_math: true
 * AI+Visualization 자료 : [Distill.pub](https://distill.pub/) \| [Poloclub](https://poloclub.github.io/) \| [Google Pair](https://pair.withgoogle.com/) \| [Open AI Blog](https://openai.com/blog/)
 * visualization 아이디어를 얻을 수 있는 소스 : [Observable](https://observablehq.com/) \| [Text Visualization Browser](https://textvis.lnu.se/) \| [VisImages](https://visimages.github.io/visimages-explorer/)
 * Custom Matplotlib Theme : [Apple Human Interface Guidelines - Color](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/) \| [Google Material Design - Color](https://material.io/design/color/the-color-system.html#color-usage-and-palettes) \| [Color Palettes in Seaborn](https://seaborn.pydata.org/tutorial/color_palettes.html)
-
-## 🔎 과제 수행 과정
-
-* [선택 과제 1] BERT Fine-tuning : imdb 영화 리뷰 데이터에 대해 pretrain 모델을 finetuning하는 과제
-  * 목표 : 모델, 파라미터, 등등 여러가지 값들을 바꾸어서 finetuning을 진행하셔서, Test Accuracy 92% 이상을 넘기는 것
-  * 참고 : [huggingface transformers](https://huggingface.co/transformers/) \| [Text Classification on IMDb](https://paperswithcode.com/sota/text-classification-on-imdb)
-
-## 🚩 모델 구현 과정
-
-* 데이터셋 만들기
-  * 데이터셋 다운로드 : `git clone https://github.com/e9t/nsmc`
-  * `ratings_train.txt` \| `ratings_test.txt`
-* 참고자료
-  * [Pytorch [Basics] — Intro to RNN](https://towardsdatascience.com/pytorch-basics-how-to-train-your-neural-net-intro-to-rnn-cb6ebc594677)
-  * [How to use Datasets and DataLoader in PyTorch for custom text data](https://towardsdatascience.com/how-to-use-datasets-and-dataloader-in-pytorch-for-custom-text-data-270eed7f7c00)
-  * [IMDB 리뷰 감성 분류하기(IMDB Movie Review Sentiment Analysis)](https://wikidocs.net/60691)
-
-## 🍂 스페셜 피어세션
-
-* 피어세션 진행 방법 공유
-* 팀 구성 과정 및 희망하는 팀 분위기 공유
-
-## 🌱 피어 세션 정리
-
-* NSMC 적용 모델 구현 내용 정리
-* 6주차 팀 회고 정리 후 제출
-* 추가 자료 공유
-  * [Naver AI NOW 다시보기](https://naver-ai-now.kr/)
-  * [Transformer 발표 영상](https://www.youtube.com/watch?v=GS-A3uMAmx4)
-
-## 💎 오피스 아워
-
-* Pre-tokenization
-  * cased : NER 같은 task
-  * uncased : 일반 task
-* Tokenization
-  * Word-based Tokenizer
-    * Out-Of-Vocabulary (OOV)
-  * Charactor-based
-    * Long sequence, Low performance
-  * Subword-based
-    * BPE(Byte-pair Encoding) : statistical method <- GPT
-    * WordPiece <- BERT
-    * Unigram
-    * SentencePiece
-* 실무에서 쓰이는 Tokenizer : Khaiii, Mecab
-
-## 🚀 학습 회고
-
-* 이번 주 기초 내용을 단단히 다지고, 다음 주 강의도 열심히 들어야겠다는 생각이 들었다.
-* 내일 백신을 맞으러 가는데 안 아팠으면 좋겠다...
