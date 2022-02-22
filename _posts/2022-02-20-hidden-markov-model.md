@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[핵심 머신러닝] Hidden Markov Models"
-subtitle:   "Sampling, STFT, Spectrogram, Mel-Spectrogram, MFCC 등에 대한 강의 내용 정리"
+subtitle:   "Hidden Markov Model에 대한 강의 내용 정리"
 categories: "Speech-Recognition"
 tags: []
 use_math: true
